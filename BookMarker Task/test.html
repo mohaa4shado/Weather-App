@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <title>Select Your Favourite Colour</title>
+</head>
+
+<body>
+    <section>
+        <select class="form-select container text-center mt-4 " onchange="showColor()" id="colorSelect">
+            <option value="Grey">Grey</option>
+            <option value="Yellow">Yellow</option>
+            <option value="Red">Red</option>
+            <option value="Blue">Blue</option>
+        </select>
+    </section>
+    <div id="color"> </div>
+
+    <script>
+        function showColor() {
+            var colorSelect = document.getElementById("colorSelect").value;
+            document.getElementById("color").innerHTML = "You selected:" + colorSelect;
+        }
+    </script>
+</body>
+
+</html>

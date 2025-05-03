@@ -1,0 +1,61 @@
+body {
+    font-family: "PT Sans Caption", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #d57500;
+}
+
+/* First section */
+h1.bookmarker-title {
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+    color: #2b221f;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+h1.first {
+    background-color: hsla(33, 100%, 50%, 0.555);
+
+}
+
+div.container h2 {
+    width: 100%;
+    color: #93C54B;
+}
+
+
+/* Middle section */
+div.container form #firstLable {
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+div.container form #secLable {
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+span {
+    margin: 5px;
+}
+
+div.container button#submitButton.btn {
+    background-color: #d1512d;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+div.container button#btn.btn:hover {
+    background-color: #a03315;
+}
+
+/* Final section */
+table {
+    width: 100%;
+    margin-top: 20px;
+}
