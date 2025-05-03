@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Weather.css">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+</head>
+
+<body style="background-color: #151723; font-family: 'Poppins', sans-serif; ">
+
+    <!-- Home Section -->
+    <section id="Home" class="p-4 bg-primary-subtle text-primary-emphasis">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <img src="Weather/logo.png" alt="">
+                <a class="navbar-brand p-3" href="">Weather</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                    <div class="navbar-nav text-center">
+                        <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#weatherCards">News</a>
+                        <a class="nav-link active" aria-current="page" href="">Live Cameras</a>
+                        <a class="nav-link active" aria-current="page" href="">Photos</a>
+                        <a class="nav-link active" aria-current="page" href="#contact">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Background Image -->
+    <section class="bg-image">
+        <div class="container text-center text-white p-4" id="weatherContainer">
+            <h1 class="display-4">Weather App</h1>
+            <p class="lead">Get the latest weather updates for your location......</p>
+            <div id="weatherInfo" class="mt-4"></div>
+
+            <div class="d-flex flex-column align-items-center">
+                <div class="row g-2 align-items-center">
+                    <div class="col-auto">
+                        <input type="text" id="searchBox" class="form-control" placeholder="Enter your location"
+                            aria-label="Search Box">
+                    </div>
+                    <div class="col-auto">
+                        <button class="btn btn-success">Go</button>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Weather Cards -->
+    <section class="container mb-4 id=" weatherCards">
+
+        <div class="row" id="weatherContainer">
+            <div class="col-md-4">
+                <div class="weather-card text-center">
+                    <h5>Today</h5>
+                    <p class="city-name">City Name</p>
+                    <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="weather" />
+                    <h4>25°C</h4>
+                    <p>Sunny</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="weather-card text-center">
+                    <h5>Tomorrow</h5>
+                    <p class="city-name">City Name</p>
+                    <img src="https://cdn.weatherapi.com/weather/64x64/day/116.png" alt="weather" />
+                    <h4>22°C</h4>
+                    <p>Partly cloudy</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="weather-card text-center">
+                    <h5>Day After</h5>
+                    <p class="city-name">City Name</p>
+                    <img src="https://cdn.weatherapi.com/weather/64x64/day/302.png" alt="weather" />
+                    <h4>18°C</h4>
+                    <p>Rainy</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Contact Section -->
+    <footer class="bg-dark text-white pt-5 pb-4" id="#contact">
+        <div class="container text-center text-md-start">
+            <div class="row justify-content-between align-items-center">
+
+                <!-- Subscribe Section -->
+                <div class="col-md-6 mb-4">
+                    <form class="d-flex justify-content-center justify-content-md-start">
+                        <input type="email"
+                            class="form-control w-75 rounded-pill px-4 me-2 bg-secondary border-0 text-white"
+                            placeholder="Enter your email to subscribe...">
+                        <button type="submit" class="btn btn-info text-white rounded-pill px-4">Subscribe</button>
+                    </form>
+                </div>
+
+                <!-- Social Icons -->
+                <div class="col-md-4 mb-4 text-center text-md-end">
+                    <a href="https://www.facebook.com" class="btn btn-outline-light btn-sm rounded-circle me-2"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com" class="btn btn-outline-light btn-sm rounded-circle me-2"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="https://www.gmail.com" class="btn btn-outline-light btn-sm rounded-circle me-2"><i
+                            class="fab fa-google-plus-g"></i></a>
+                    <a href="" class="btn btn-outline-light btn-sm rounded-circle"><i
+                            class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="row">
+                <div class="col text-center mt-3">
+                    <small>Copyright © 2025 by Mohammed Hussein . All rights reserved.</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Font Awesome CDN (for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+    <script src="bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
+    <script src="Weather.js"></script>
+</body>
+
+</html>
